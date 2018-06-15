@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="manjinder.traintracks.SeatAvailable">
+
+    <EditText
+        android:id="@+id/train_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="1dp"
+        android:padding="8dp"
+        android:hint="Enter Train No"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="1dp"
+        android:hint="Enter Source Code"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="1dp"
+        android:hint="Enter Destination Code"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/jurnydate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="1dp"
+        android:hint="Enter Date(dd-mm-yyyy)"
+        android:inputType="date"
+        />
+    <EditText
+        android:id="@+id/seatclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="1dp"
+        android:hint="Enter Class Code(1A,2A,3A,FC,CC,SL,2S)"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/quota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="1dp"
+        android:hint="Enter Quota Code(GN,TQ)"
+        android:inputType="text"/>
+    <Button
+        android:id="@+id/showavailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search"
+        android:background="@drawable/buttonshap"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/train_name"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/dateshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:visibility="gone"
+            android:textSize="18dp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/availshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availability"
+            android:visibility="gone"
+            android:textSize="18dp"
+            android:layout_marginLeft="21dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/seatcheck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:divider="@null"
+        >
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="manjinder.traintracks.Station_to_Code">
+
+    <EditText
+        android:id="@+id/Station_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Station Name"
+        android:layout_margin="10sp"
+        android:padding="10sp"
+        android:maxLines="1"/>
+    <Button
+        android:id="@+id/Get_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshap"
+        android:text="Get Code"
+        android:textSize="20dp"
+        android:padding="10sp"
+        android:layout_margin="10sp"/>
+
+    <TextView
+        android:id="@+id/getcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Station Code"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        />
+</LinearLayout>

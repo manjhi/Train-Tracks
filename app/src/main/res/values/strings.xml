@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TrainTracks</string>
+
+    <string name="Route">Route</string>
+    <string name="Seat">Seat Availability</string>
+    <string name="Live">Live Status</string>
+    <string name="Station">Train between Stations</string>
+    <string name="PNR">PNR Status</string>
+</resources>

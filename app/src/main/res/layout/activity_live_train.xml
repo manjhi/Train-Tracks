@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="manjinder.traintracks.LiveTrain">
+
+    <EditText
+        android:id="@+id/LiveTrainNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Train No"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:id="@+id/LiveTrainDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date(dd-mm-yyy)"
+        android:inputType="date"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/TrainLiveStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Live Status"
+        android:textSize="15dp"
+        android:background="@drawable/buttonshap"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/train_name"
+        android:hint="Train Name"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/StationName"
+        android:hint="Current Station"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+    <TextView
+        android:id="@+id/ScharrTime"
+        android:hint="Schedual Arrival"
+        android:layout_margin="2dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/SchActArrTime"
+        android:hint="Acepted Arrival"
+        android:layout_margin="2dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+    <TextView
+        android:id="@+id/SchdepTime"
+        android:hint="Schedual Departure"
+        android:layout_margin="2dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/SchActDepTime"
+        android:hint="Acepted Departure"
+        android:layout_margin="2dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Delay"
+        android:hint="Delay"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Status"
+        android:hint="Current Status"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

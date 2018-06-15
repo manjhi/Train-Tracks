@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="manjinder.traintracks.TrainInfoByNumber">
+
+    <EditText
+        android:id="@+id/insert_train"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/show_train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:background="@drawable/buttonshap"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/train_name"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/Stn"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Station Name"
+            android:textSize="15sp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/sch_dep"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="departure"
+            android:textSize="15sp"
+            android:layout_marginLeft="21dp"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/sch_arr"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@id/sch_dep"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/route_view"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:divider="@null"/>
+
+</LinearLayout>

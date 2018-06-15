@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="manjinder.traintracks.TrainBetweenStation">
+
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:hint="Enter Source Station Code"/>
+    <EditText
+        android:id="@+id/destini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:hint="Enter Destination Station Code"/>
+    <EditText
+        android:id="@+id/stndate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:hint="Enter Date(dd-mm-yyy)"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/showstation"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search train"
+        android:background="@drawable/buttonshap"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+    <ListView
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/StationsName">
+
+    </ListView>
+</LinearLayout>
